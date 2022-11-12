@@ -140,9 +140,9 @@ SELECT FECHA, SUM(cantidad) AS total FROM inscritos GROUP BY fecha HAVING SUM(ca
 ●   ¿Cuántas personas se registraron en promedio cada día a partir del tercer día?
     HINT: ingresa manualmente la fecha del tercer día
 
-SELECT ROUND(AVG(TOTAL),1) FROM (SELECT SUM(CANTIDAD) AS TOTAL FROM INSCRITOS WHERE FECHA >= '2021-01-03' GROUP BY FECHA) AS PERSONAS;
+SELECT ROUND(AVG(TOTAL),1) FROM (SELECT SUM(CANTIDAD) AS TOTAL FROM INSCRITOS WHERE FECHA >= '01-03-2021' GROUP BY FECHA) AS PERSONAS;
 
  round
 -------
-  96.3
+  92.3
 (1 fila)
